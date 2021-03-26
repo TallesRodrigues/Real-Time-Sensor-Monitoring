@@ -43,8 +43,7 @@ while True:
 		print ("Comando "+ rc_cmd)
 
 		if rc_cmd =='Insert':
-			#print (data['node_id'],data['sensor'], data['value'])
-			print (data)
+			print (data) #checking the data you are receiving. Used for development, but can be removed for Production
 			post_id = collections.insert_one(data).insert_one
 
 	except:
